@@ -18,7 +18,7 @@ public class Client {
             String targetLanguage = clientFrame.getSelectedLanguage();
 
             // Connect to the server @ localhost, port 1234
-            Socket socket = new Socket(InetAddress.getLocalHost(), 1234);
+            Socket socket = new Socket(InetAddress.getLocalHost(), 4226);
 
             // Update the status of the connection
             clientFrame.updateConnectionStatus(socket.isConnected());

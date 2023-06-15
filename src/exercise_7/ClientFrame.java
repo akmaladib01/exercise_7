@@ -96,7 +96,7 @@ public class ClientFrame extends JFrame {
     private void sendTranslationRequest(String text, String targetLanguage) {
         try {
             // Connect to the server @ localhost, port 1234
-            Socket socket = new Socket(InetAddress.getLocalHost(), 1234);
+            Socket socket = new Socket(InetAddress.getLocalHost(), 4226);
 
             // Update the status of the connection
             updateConnectionStatus(socket.isConnected());
